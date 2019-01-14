@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Planner</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <li>
+        <a href="">Event Planner</a>
+      </li>
+    </nav>
+  </header>
+<div class="wrapper">
+  <div class="container">
+    <div class="signup" id="signup" onclick="show_signup()">Sign Up</div>
+    <div class="login" id="login" onclick="show_login()">Sign In</div>
+     <div class="signup-form" id="signup-form">
+        <form method="POST">
+        <input type="text" placeholder="Name" class="input form_lg" name="name">
+        <input type="email" placeholder="Email Address" class="input form_lg" name="email">
+        <input type="password" placeholder="Password" class="input form_lg" name="password">
+        <div class="btn" onclick="AuthController.register(event,this.form)">Create account</div>
+     </form>
+     </div>
+    <div class="login-form" id="login-form">
+     <form method="POST">
+      <input type="text" placeholder="Email or Username" name="email" class="input form_lg" onclick ="legend_show()" id="email">
+      <input type="text" placeholder="Password" name="password" class="input form_lg" onclick ="legend_show()">
+        <div class="btn" onclick="AuthController.login(event,this.form)">log in</div>
+     </form>
+     </div>
+    
+  </div>
+</div>
+<script src="/assets/js/auth/authController.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

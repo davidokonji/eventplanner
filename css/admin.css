@@ -1,0 +1,141 @@
+nav{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  background-color: #1565c0;
+  align-items: center;
+  color: #fff;
+}
+nav li{
+  color: #fff;
+}
+li{
+  list-style: none;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+input[type=file]{
+cursor: pointer;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background: #e9eaea;
+user-select: none;
+}
+
+.container{
+width: 530px;
+margin: 50px auto;
+}
+.signup-form{
+background: #fff;
+padding: 40px;
+clear: both;
+width: 100%;
+display:flex;
+flex-direction:column;
+box-sizing: border-box;
+}
+.form_num{
+width: 50%;
+padding: 15px;
+box-sizing: border-box;
+border: 2px solid #e9eaea;
+margin:5px;
+text-align: center;
+margin-left:10px;
+margin-bottom: 15px;
+color: #3e3e40;
+font-size: 14px;
+outline: none;
+transform: all 0.5s ease;
+}
+.form_sm{
+width: 100%;
+padding: 15px;
+box-sizing: border-box;
+margin:10px;
+margin-bottom: 15px;
+border: 2px solid #e9eaea;
+color: #3e3e40;
+font-size: 14px;
+outline: none;
+transform: all 0.5s ease;
+}
+.form_lg{
+width: 97%;
+padding: 20px;
+box-sizing: border-box;
+margin-bottom: 15px;
+margin:10px;
+border: 2px solid #e9eaea;
+color: #3e3e40;
+font-size: 14px;
+outline: none;
+transform: all 0.5s ease;
+}
+
+/* .btn{
+width: 100%;
+background: #25274d;
+height: 60px;
+text-align: center;
+line-height: 60px;
+text-transform: uppercase;
+color: #fff;
+font-weight: bold;
+margin-left:10px;
+letter-spacing: 1px;
+cursor: pointer;
+margin-bottom: 5px;
+} */
+span a{
+text-decoration: none;
+color: #000;
+}
+.double{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+}
